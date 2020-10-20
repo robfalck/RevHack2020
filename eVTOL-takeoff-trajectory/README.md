@@ -25,6 +25,10 @@ To integrate the state transition matrix, we start with a state transition matri
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left[&space;\dot{\phi}&space;\right]&space;=&space;f_x&space;\left[&space;\phi&space;\right]" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\left[&space;\dot{\phi}&space;\right]&space;=&space;f_x&space;\left[&space;\phi&space;\right]" title="\left[ \dot{\phi} \right] = f_x \left[ \phi \right]" /></a>
 
+Here $f_x$ is the derivative of the state transition matrix with respect to the state vector.
+In this formulation, if the ODE is dependent upon time or controls, then time and controls must be treated as state variables.
+In that case, the time derivative of time is 1, and the time derivative of the controls are the control rates.
+
 An excellent discussion of the state transition matrix is provided by [Pellegrini and Russell](https://www.researchgate.net/publication/281440699_On_the_Accuracy_of_Trajectory_State-Transition_Matrices).
 
 ## Implementation using a manually-coded numerical integration technique
